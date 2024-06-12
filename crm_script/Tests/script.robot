@@ -7,7 +7,7 @@ Library                     SeleniumLibrary
 *** Test Cases ***
 Should be able to add new customer
     [Documentation]                         Informations about the TEST
-    [Tags]                                  id:1006    type:Smoke    feature:Contacts
+    [Tags]                                  id:1006        type:Smoke        feature:Contacts
 
     # Initialize Selenium
     Set Selenium Speed                      .2 seconds
