@@ -1,48 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.4 on win32)" generated="2024-06-12T15:15:31.596399" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.4 on win32)" generated="2024-06-17T16:21:44.829290" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon" source="C:\Users\victor.machado_sofis\Documents\GitHub\RobotFramework-Studies\amazon_test\Tests\script.robot">
 <test id="s1-t1" name="User must sign in to check out" line="6">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-12T15:15:31.888424" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/'.</msg>
+<msg time="2024-06-17T16:21:45.122348" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/'.</msg>
 <arg>https://www.amazon.com.br/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-12T15:15:31.887443" elapsed="6.323282"/>
+<status status="PASS" start="2024-06-17T16:21:45.122348" elapsed="6.167295"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Acesse uma conta para ter a melhor experiência</arg>
+<arg>Olá, faça seu login</arg>
+<arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-12T15:15:38.211725" elapsed="0.031995"/>
+<status status="PASS" start="2024-06-17T16:21:51.290644" elapsed="0.039103"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-12T15:15:38.244748" level="INFO">Typing text 'amaciante downy' into text field 'id=twotabsearchtextbox'.</msg>
+<msg time="2024-06-17T16:21:51.330748" level="INFO">Typing text 'amaciante downy' into text field 'id=twotabsearchtextbox'.</msg>
 <arg>id=twotabsearchtextbox</arg>
 <arg>amaciante downy</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-12T15:15:38.244748" elapsed="0.325974"/>
+<status status="PASS" start="2024-06-17T16:21:51.330748" elapsed="0.349246"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-12T15:15:38.571726" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<msg time="2024-06-17T16:21:51.680990" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
 <arg>id=nav-search-submit-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-12T15:15:38.570722" elapsed="1.986859"/>
+<status status="PASS" start="2024-06-17T16:21:51.680990" elapsed="2.493990"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>resultados para "amaciante downy"</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-12T15:15:40.558578" elapsed="0.028499"/>
+<status status="PASS" start="2024-06-17T16:21:54.180982" elapsed="0.062998"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-12T15:15:40.588061" level="INFO">Clicking element '//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div[2]/div[1]/h2/a'.</msg>
+<msg time="2024-06-17T16:21:54.244980" level="INFO">Clicking element '//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div[2]/div[1]/h2/a'.</msg>
 <arg>//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div[2]/div[1]/h2/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-12T15:15:40.588061" elapsed="4.637942"/>
+<status status="PASS" start="2024-06-17T16:21:54.243980" elapsed="4.263024"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Downy Brisa Suave Amaciante Concentrado 3L</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-06-17T16:21:58.508006" elapsed="0.048868"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-17T16:21:58.556874" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-17T16:21:58.556874" elapsed="4.370903"/>
 </kw>
 <tag>id:1</tag>
-<status status="PASS" start="2024-06-12T15:15:31.886422" elapsed="13.339581"/>
+<status status="PASS" start="2024-06-17T16:21:45.121347" elapsed="17.807431"/>
 </test>
 <doc>Amazon Tests</doc>
-<status status="PASS" start="2024-06-12T15:15:31.599413" elapsed="13.627590"/>
+<status status="PASS" start="2024-06-17T16:21:44.831288" elapsed="18.098521"/>
 </suite>
 <statistics>
 <total>
