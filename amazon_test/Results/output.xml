@@ -1,231 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.4 on win32)" generated="2024-06-18T14:43:15.589751" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.4 on win32)" generated="2024-06-18T15:17:57.734940" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon" source="C:\Users\victor.machado_sofis\Documents\GitHub\RobotFramework-Studies\amazon_test\Tests\script.robot">
-<test id="s1-t1" name="User can search for products" line="11">
+<test id="s1-t1" name="User must sign in to check out" line="16">
 <kw name="Initialize web test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-18T14:43:15.904756" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2024-06-18T15:17:58.225767" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-18T14:43:15.903772" elapsed="2.668380"/>
+<status status="PASS" start="2024-06-18T15:17:58.225767" elapsed="3.393582"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-18T14:43:18.573181" elapsed="0.028891"/>
+<status status="PASS" start="2024-06-18T15:18:01.620335" elapsed="0.051539"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:15.902750" elapsed="2.699322"/>
+<status status="PASS" start="2024-06-18T15:17:58.224769" elapsed="3.448137"/>
 </kw>
 <kw name="Access Homepage" owner="AmazonWebPage">
 <kw name="Access Homepage" owner="homePage">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-06-18T14:43:18.605084" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
+<msg time="2024-06-18T15:18:01.674911" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
 <arg>https://www.amazon.com.br</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-06-18T14:43:18.604087" elapsed="2.968911"/>
+<status status="PASS" start="2024-06-18T15:18:01.673874" elapsed="3.255762"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:18.604087" elapsed="2.968911"/>
+<status status="PASS" start="2024-06-18T15:18:01.673874" elapsed="3.256766"/>
 </kw>
 <kw name="Verify page loaded" owner="homePage">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Olá, faça seu login</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-18T14:43:21.574001" elapsed="0.062994"/>
+<status status="PASS" start="2024-06-18T15:18:04.931643" elapsed="0.088016"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:21.574001" elapsed="0.062994"/>
+<status status="PASS" start="2024-06-18T15:18:04.930640" elapsed="0.090000"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:18.602072" elapsed="3.034923"/>
+<status status="PASS" start="2024-06-18T15:18:01.672906" elapsed="3.347734"/>
 </kw>
 <kw name="Search for a product" owner="AmazonWebPage">
 <kw name="Type search text" owner="TopNav">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-18T14:43:21.639992" level="INFO">Typing text 'amaciante downy' into text field 'id=twotabsearchtextbox'.</msg>
+<msg time="2024-06-18T15:18:05.024639" level="INFO">Typing text 'amaciante downy' into text field 'id=twotabsearchtextbox'.</msg>
 <arg>id=twotabsearchtextbox</arg>
 <arg>amaciante downy</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-18T14:43:21.639992" elapsed="0.240254"/>
+<status status="PASS" start="2024-06-18T15:18:05.023642" elapsed="0.354995"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:21.639005" elapsed="0.241241"/>
+<status status="PASS" start="2024-06-18T15:18:05.022639" elapsed="0.355998"/>
 </kw>
 <kw name="Submit search" owner="TopNav">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-18T14:43:21.882246" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<msg time="2024-06-18T15:18:05.379643" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
 <arg>id=nav-search-submit-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-18T14:43:21.882246" elapsed="0.320000"/>
+<status status="PASS" start="2024-06-18T15:18:05.379643" elapsed="0.579769"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:21.881248" elapsed="0.320998"/>
+<status status="PASS" start="2024-06-18T15:18:05.379643" elapsed="0.579769"/>
 </kw>
 <kw name="Verify page loaded" owner="searchPage">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>resultados para "amaciante downy"</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-18T14:43:22.203248" elapsed="1.924955"/>
+<status status="PASS" start="2024-06-18T15:18:05.961421" elapsed="2.193383"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:22.203248" elapsed="1.925957"/>
+<status status="PASS" start="2024-06-18T15:18:05.960457" elapsed="2.194347"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:21.637993" elapsed="2.491212"/>
-</kw>
-<kw name="Finalize web test" owner="Common" type="TEARDOWN">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-18T14:43:24.131226" elapsed="2.346804"/>
-</kw>
-<status status="PASS" start="2024-06-18T14:43:24.130204" elapsed="2.348848"/>
-</kw>
-<tag>id:1</tag>
-<status status="PASS" start="2024-06-18T14:43:15.901792" elapsed="10.577812"/>
-</test>
-<test id="s1-t2" name="User must sign in to check out" line="16">
-<kw name="Initialize web test" owner="Common" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-18T14:43:26.483684" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<arg>about:blank</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-18T14:43:26.483684" elapsed="2.291080"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-18T14:43:28.774764" elapsed="0.043079"/>
-</kw>
-<status status="PASS" start="2024-06-18T14:43:26.482684" elapsed="2.335159"/>
-</kw>
-<kw name="Access Homepage" owner="AmazonWebPage">
-<kw name="Access Homepage" owner="homePage">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-06-18T14:43:28.820864" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
-<arg>https://www.amazon.com.br</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-06-18T14:43:28.819875" elapsed="2.839914"/>
-</kw>
-<status status="PASS" start="2024-06-18T14:43:28.819875" elapsed="2.839914"/>
-</kw>
-<kw name="Verify page loaded" owner="homePage">
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Olá, faça seu login</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-18T14:43:31.660784" elapsed="0.070005"/>
-</kw>
-<status status="PASS" start="2024-06-18T14:43:31.660784" elapsed="0.070005"/>
-</kw>
-<status status="PASS" start="2024-06-18T14:43:28.819875" elapsed="2.910914"/>
-</kw>
-<kw name="Search for a product" owner="AmazonWebPage">
-<kw name="Type search text" owner="TopNav">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-18T14:43:31.733789" level="INFO">Typing text 'amaciante downy' into text field 'id=twotabsearchtextbox'.</msg>
-<arg>id=twotabsearchtextbox</arg>
-<arg>amaciante downy</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-18T14:43:31.733789" elapsed="0.238991"/>
-</kw>
-<status status="PASS" start="2024-06-18T14:43:31.731783" elapsed="0.240997"/>
-</kw>
-<kw name="Submit search" owner="TopNav">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-18T14:43:31.974786" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
-<arg>id=nav-search-submit-button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-18T14:43:31.973783" elapsed="0.367729"/>
-</kw>
-<status status="PASS" start="2024-06-18T14:43:31.973783" elapsed="0.368726"/>
-</kw>
-<kw name="Verify page loaded" owner="searchPage">
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>resultados para "amaciante downy"</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-18T14:43:32.343509" elapsed="2.246158"/>
-</kw>
-<status status="PASS" start="2024-06-18T14:43:32.342509" elapsed="2.247158"/>
-</kw>
-<status status="PASS" start="2024-06-18T14:43:31.730789" elapsed="2.858878"/>
+<status status="PASS" start="2024-06-18T15:18:05.021675" elapsed="3.133129"/>
 </kw>
 <kw name="Open product page" owner="AmazonWebPage">
 <kw name="Click on the first search result" owner="searchPage">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-18T14:43:34.591670" level="INFO">Clicking element '//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div[2]/div[1]/h2/a'.</msg>
+<msg time="2024-06-18T15:18:08.156735" level="INFO">Clicking element '//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div[2]/div[1]/h2/a'.</msg>
 <arg>//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div[2]/div[1]/h2/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-18T14:43:34.591670" elapsed="5.246863"/>
+<status status="PASS" start="2024-06-18T15:18:08.155671" elapsed="4.452257"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:34.590667" elapsed="5.247866"/>
+<status status="PASS" start="2024-06-18T15:18:08.155671" elapsed="4.452257"/>
 </kw>
 <kw name="Verify page loaded" owner="productPage">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Voltar aos resultados</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-18T14:43:39.838533" elapsed="0.058637"/>
+<status status="PASS" start="2024-06-18T15:18:12.607928" elapsed="0.061082"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:39.838533" elapsed="0.058637"/>
+<status status="PASS" start="2024-06-18T15:18:12.607928" elapsed="0.061082"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:34.590667" elapsed="5.306503"/>
+<status status="PASS" start="2024-06-18T15:18:08.155671" elapsed="4.513339"/>
 </kw>
 <kw name="Add product to cart" owner="AmazonWebPage">
 <kw name="Click the &quot;add to cart&quot; button" owner="productPage">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-18T14:43:39.905165" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<msg time="2024-06-18T15:18:12.670008" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
 <arg>id=add-to-cart-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-18T14:43:39.905165" elapsed="2.883571"/>
+<status status="PASS" start="2024-06-18T15:18:12.670008" elapsed="2.087608"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:39.905165" elapsed="2.883571"/>
+<status status="PASS" start="2024-06-18T15:18:12.670008" elapsed="2.087608"/>
 </kw>
 <kw name="Verify page loaded" owner="cartPage">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Adicionado ao carrinho</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-18T14:43:42.788736" elapsed="0.074443"/>
+<status status="PASS" start="2024-06-18T15:18:14.757616" elapsed="0.082987"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:42.788736" elapsed="0.074443"/>
+<status status="PASS" start="2024-06-18T15:18:14.757616" elapsed="0.082987"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:39.905165" elapsed="2.958014"/>
+<status status="PASS" start="2024-06-18T15:18:12.669010" elapsed="2.171593"/>
 </kw>
 <kw name="Proceed to Checkout" owner="AmazonWebPage">
 <kw name="Click the &quot;Proceed to Checkout&quot; button" owner="cartPage">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-18T14:43:42.867657" level="INFO">Clicking button 'name=proceedToRetailCheckout'.</msg>
+<msg time="2024-06-18T15:18:14.842565" level="INFO">Clicking button 'name=proceedToRetailCheckout'.</msg>
 <arg>name=proceedToRetailCheckout</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-18T14:43:42.867657" elapsed="1.534901"/>
+<status status="PASS" start="2024-06-18T15:18:14.842565" elapsed="1.626645"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:42.867657" elapsed="1.534901"/>
+<status status="PASS" start="2024-06-18T15:18:14.842565" elapsed="1.626645"/>
 </kw>
 <kw name="Verify page loaded" owner="loginPage">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Fazer login</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-06-18T14:43:44.402558" elapsed="0.028511"/>
+<status status="PASS" start="2024-06-18T15:18:16.469210" elapsed="0.025053"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:44.402558" elapsed="0.028511"/>
+<status status="PASS" start="2024-06-18T15:18:16.469210" elapsed="0.025053"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:42.867657" elapsed="1.563412"/>
+<status status="PASS" start="2024-06-18T15:18:14.841599" elapsed="1.653688"/>
 </kw>
 <kw name="Finalize web test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-18T14:43:44.431069" elapsed="2.428099"/>
+<status status="PASS" start="2024-06-18T15:18:16.496525" elapsed="2.446495"/>
 </kw>
-<status status="PASS" start="2024-06-18T14:43:44.431069" elapsed="2.428099"/>
+<status status="PASS" start="2024-06-18T15:18:16.495511" elapsed="2.447509"/>
 </kw>
-<tag>id:2</tag>
-<status status="PASS" start="2024-06-18T14:43:26.481624" elapsed="20.377544"/>
+<tag>2</tag>
+<status status="PASS" start="2024-06-18T15:17:58.223769" elapsed="20.720248"/>
 </test>
 <doc>Amazon Tests</doc>
-<status status="PASS" start="2024-06-18T14:43:15.592780" elapsed="31.266388"/>
+<status status="PASS" start="2024-06-18T15:17:57.737930" elapsed="21.208080"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">id:1</stat>
-<stat pass="1" fail="0" skip="0">id:2</stat>
+<stat pass="1" fail="0" skip="0">2</stat>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Amazon">Amazon</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon">Amazon</stat>
 </suite>
 </statistics>
 <errors>

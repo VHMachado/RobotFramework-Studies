@@ -9,12 +9,12 @@ Test Teardown               Finalize web test
 
 *** Test Cases ***
 User can search for products
-    [Tags]    id:1
+    [Tags]    1
     AmazonWebPage.Access Homepage
     AmazonWebPage.Search for a product
 
 User must sign in to check out
-    [Tags]    id:2
+    [Tags]    2
 
     AmazonWebPage.Access Homepage
     AmazonWebPage.Search for a product
