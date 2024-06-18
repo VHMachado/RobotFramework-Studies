@@ -2,7 +2,8 @@
 Library            SeleniumLibrary
 
 *** Keywords ***
-Search product
-    Wait Until Page Contains        Olá, faça seu login    timeout=10s
+Type search text
     Input Text                      id=twotabsearchtextbox            amaciante downy
+
+Submit search
     Click Button                    id=nav-search-submit-button

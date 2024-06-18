@@ -3,7 +3,7 @@ Library            SeleniumLibrary
 
 *** Keywords ***
 Initialize web test
-    Open Browser                    https://www.amazon.com.br/        chrome
+    Open Browser                about:blank        chrome
     Maximize Browser Window
 
 Finalize web test
