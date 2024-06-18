@@ -10,7 +10,6 @@ Initialize web test
     # Expected result: Browser opens successfully
     Open Browser                            https://automationplayground.com/crm/index.html        chrome
     Maximize Browser Window
-    Wait Until Page Contains                Customers Are Priority One!
 
 End web test
     # Close web browser

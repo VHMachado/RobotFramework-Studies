@@ -4,10 +4,11 @@ Library             SeleniumLibrary
 *** Keywords ***
 Click "New Customer" button
 # Expected Result: "Add customer" page loads
+    Wait Until Page Contains               Our Happy Customers
     Click Link                             id=new-customer
-    Wait Until Page Contains               Add Customer
 
 Type customer email
+    Wait Until Page Contains               Add Customer
     Input Text                             id=EmailAddress      user@rfwtutorial.com
 
 Type customer first name
