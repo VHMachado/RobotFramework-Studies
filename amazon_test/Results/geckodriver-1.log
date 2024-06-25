@@ -1,2 +1,0 @@
-1718721899635	geckodriver	INFO	Listening on 127.0.0.1:52069
-1718721902705	mozrunner::runner	INFO	Running command: "C:\\Users\\victor.machado_sofis\\.cache\\selenium\\firefox\\win64\\127.0\\firefox.exe" "--marionette" "--re ... emote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\VICTOR~1.MAC\\AppData\\Local\\Temp\\rust_mozprofilebEBcED"
