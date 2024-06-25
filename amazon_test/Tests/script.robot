@@ -7,6 +7,11 @@ Resource                    ../Resources/AmazonWebPage.robot
 Test Setup                  Initialize web test
 Test Teardown               Finalize web test
 
+*** Variables ***
+${BROWSER} =  firefox
+${HOMEPAGE URL} =  https://www.amazon.com.br
+${SEARCH TERM} =  perfume
+
 *** Test Cases ***
 User can search for products
     [Tags]    1

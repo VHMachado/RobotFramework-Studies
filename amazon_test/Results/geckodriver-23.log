@@ -1,0 +1,17 @@
+1719342616343	geckodriver	INFO	Listening on 127.0.0.1:63158
+1719342619421	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63159" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\VICTOR~1.MAC\\AppData\\Local\\Temp\\rust_mozprofileBanMzv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719342620275	Marionette	INFO	Marionette enabled
+1719342620788	Marionette	INFO	Listening on port 63171
+WebDriver BiDi listening on ws://127.0.0.1:63159
+Read port: 63171
+1719342621071	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63159/devtools/browser/194ad1c4-09eb-4286-8089-575040d3c9f2
+JavaScript warning: https://www.amazon.com.br/, line 1973: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=perfume, line 8924: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1719342639638	Marionette	INFO	Stopped listening on port 63171
+Dynamically enable window occlusion 1

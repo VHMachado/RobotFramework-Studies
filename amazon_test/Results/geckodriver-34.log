@@ -1,0 +1,24 @@
+1719344415024	geckodriver	INFO	Listening on 127.0.0.1:51523
+1719344418122	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51524" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\VICTOR~1.MAC\\AppData\\Local\\Temp\\rust_mozprofilehFTbhl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719344419073	Marionette	INFO	Marionette enabled
+1719344419330	Marionette	INFO	Listening on port 51535
+Read port: 51535
+WebDriver BiDi listening on ws://127.0.0.1:51524
+1719344419431	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51524/devtools/browser/5fa0b4ff-a316-4d70-89b9-de3f80f673e1
+JavaScript warning: https://www.amazon.com.br/, line 1953: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/s?k=perfume&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss, line 8917: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/Amor-Cacharel-Eau-Toilette-50ML/dp/B000C21014/ref=sr_1_1_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dib=eyJ2IjoiMSJ9.Pz9_K2GTHPSEKuI4Oy5J67oCrT5fMLVj0R-c9fRWWmgZWrWqN5m9H98-SGfYDsO4lX1Gotv8Gwf4RqxfInMdtWYNaDuKdsaD06B52GsEQzOE0CLkI_lwpHtMVI0pbl_QA_mFpNgHbC2Sx94lD1MFERwbkPXimwaCwNlLQNPxHSSbVoAJtnNW2MaPXNWrU_mhMnk91CUSyddRwTEiP3AbV6JZ9r-I2aCivL90NeJE1biFLMDUljIGCDEPnNdATmK9v7-S9Ex-vnyx38S4WP9IdaxBESI5aq-TkjemQVUAhk0.xTJH4QHiFbsWAdE_0TYPhC3gFl8tscQKrF4HKqEg1GM&dib_tag=se&keywords=perfume&qid=1719344425&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.6a09f7ec-d911-4889-ad70-de8dd83c8a74&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1, line 10360: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1719344449109	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://www.amazon.com.br/cart/add-to-cart/ref=dp_start-bbf_1_glance, line 3027: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1719344474473	Marionette	INFO	Stopped listening on port 51535
+JavaScript warning: https://images-na.ssl-images-amazon.com/images/I/61yXDIPmT-L._RC|11Y+5x+kkTL.js,51KMV3Cz2XL.js,31x4ENTlVIL.js,31f4+QIEeqL.js,01N6xzIJxbL.js,518BI433aLL.js,01rpauTep4L.js,31QZSjMuoeL.js,61ofwvddDeL.js,01KsMxlPtzL.js_.js?AUIClients/AmazonUI, line 215: Script terminated by timeout at:
+b@https://images-na.ssl-images-amazon.com/images/I/61yXDIPmT-L._RC|11Y+5x+kkTL.js,51KMV3Cz2XL.js,31x4ENTlVIL.js,31f4+QIEeqL.js,01N6xzIJxbL.js,518BI433aLL.js,01rpauTep4L.js,31QZSjMuoeL.js,61ofwvddDeL.js,01KsMxlPtzL.js_.js?AUIClients/AmazonUI:215:84
+@https://images-na.ssl-images-amazon.com/images/I/61yXDIPmT-L._RC|11Y+5x+kkTL.js,51KMV3Cz2XL.js,31x4ENTlVIL.js,31f4+QIEeqL.js,01N6xzIJxbL.js,518BI433aLL.js,01rpauTep4L.js,31QZSjMuoeL.js,61ofwvddDeL.js,01KsMxlPtzL.js_.js?AUIClients/AmazonUI:244:302
+b/h<@https://images-na.ssl-images-amazon.com/images/I/61yXDIPmT-L._RC|11Y+5x+kkTL.js,51KMV3Cz2XL.js,31x4ENTlVIL.js,31f4+QIEeqL.js,01N6xzIJxbL.js,518BI433aLL.js,01rpauTep4L.js,31QZSjMuoeL.js,61ofwvddDeL.js,01KsMxlPtzL.js_.js?AUIClients/AmazonUI:217:331
+
+JavaScript error: https://images-na.ssl-images-amazon.com/images/I/8177uTcYaeL.js?AUIClients/FWCIMAssets, line 571: NS_ERROR_OUT_OF_MEMORY
+Dynamically enable window occlusion 1

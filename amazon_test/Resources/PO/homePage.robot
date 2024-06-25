@@ -5,7 +5,7 @@ Library            SeleniumLibrary
 
 *** Keywords ***
 Access Homepage
-    Go To                           https://www.amazon.com.br
+    Go To                           ${HOMEPAGE URL}
 
 Verify page loaded
     Wait Until Page Contains        Olá, faça seu login    timeout=10s

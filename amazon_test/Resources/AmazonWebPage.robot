@@ -18,10 +18,10 @@ Search for a product
     searchPage.Verify page loaded
 
 Open product page
-    searchPage.Click on the first search result
+    searchPage.Click on search result
     productPage.Verify page loaded
 Add product to cart
-    productPage.Click the "add to cart" button
+    productPage.Click on "Add to Cart" button
     cartPage.Verify page loaded
 
 Proceed to Checkout

@@ -1,0 +1,19 @@
+1719341361949	geckodriver	INFO	Listening on 127.0.0.1:60283
+1719341365108	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60284" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\VICTOR~1.MAC\\AppData\\Local\\Temp\\rust_mozprofileLCFAoG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719341366188	Marionette	INFO	Marionette enabled
+1719341366447	Marionette	INFO	Listening on port 60295
+Read port: 60295
+WebDriver BiDi listening on ws://127.0.0.1:60284
+1719341366557	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60284/devtools/browser/0e72e74c-5e10-4281-966a-87783a5e7e4b
+JavaScript warning: https://www.amazon.com.br/, line 1953: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/s?k=celular&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss, line 13915: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1719341374290	Marionette	INFO	Stopped listening on port 60295
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/PictureInPicture.sys.mjs, line 558: TypeError: browser is null
+JavaScript error: resource://gre/modules/PictureInPicture.sys.mjs, line 558: TypeError: browser is null
+JavaScript error: resource://gre/modules/PictureInPicture.sys.mjs, line 558: TypeError: browser is null
+JavaScript error: resource://gre/modules/PictureInPicture.sys.mjs, line 558: TypeError: browser is null

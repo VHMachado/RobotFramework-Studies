@@ -1,0 +1,22 @@
+1719339988180	geckodriver	INFO	Listening on 127.0.0.1:55923
+1719339991291	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55924" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\VICTOR~1.MAC\\AppData\\Local\\Temp\\rust_mozprofileugy8AU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719339992708	Marionette	INFO	Marionette enabled
+1719339993143	Marionette	INFO	Listening on port 55931
+WebDriver BiDi listening on ws://127.0.0.1:55924
+Read port: 55931
+1719339993557	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55924/devtools/browser/1b7a2a9e-7214-41b8-9dcc-e6dae1ad4913
+JavaScript warning: https://www.amazon.com.br/, line 1953: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/s?k=celular&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss, line 13699: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1719340004161	Marionette	INFO	Stopped listening on port 55931
+JavaScript warning: https://www.amazon.com.br/s?k=celular&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss, line 13691: Script terminated by timeout at:
+H@https://www.amazon.com.br/s?k=celular&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss:13691:13651
+Y@https://www.amazon.com.br/s?k=celular&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss:13691:13571
+w[3]@https://www.amazon.com.br/s?k=celular&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss:13691:15150
+q@https://www.amazon.com.br/s?k=celular&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss:13691:13346
+D/<@https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=celular:378:686
+
+Dynamically enable window occlusion 1
