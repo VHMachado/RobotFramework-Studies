@@ -8,6 +8,7 @@ Test Teardown               End web test
 
 *** Variables ***
 ${BROWSER} =  firefox
+${HOME PAGE URL} =  https://automationplayground.com/crm/index.html
 ${USER EMAIL} =  admin@robotframeworktutorial.com
 ${USER PASSWORD} =  qwe
 ${NEW CLIENT EMAIL} =  newuser@robot.com
@@ -15,7 +16,7 @@ ${NEW CLIENT EMAIL} =  newuser@robot.com
 *** Test Cases ***
 Should be able to add new customer
     [Documentation]                         Informations about the TEST
-    [Tags]                                  id:1006        type:Smoke        feature:Contacts
+    [Tags]                                  1006        Smoke        Contacts
 
     crm.Access Homepage
     crm.Sign In
