@@ -18,6 +18,8 @@ ${customerGender} =  male
 
 *** Keywords ***
 Type customer email
+    [Arguments]                            ${NEW CLIENT EMAIL}
+
     Wait Until Page Contains               Add Customer
     Input Text                             ${emailBar}                ${NEW CLIENT EMAIL}
 

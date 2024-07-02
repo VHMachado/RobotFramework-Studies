@@ -3,16 +3,12 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 Initialize web test
-    Set Selenium Speed                      .2 seconds
-    Set Selenium Timeout                    5 seconds
+    [Arguments]                             ${BROWSER}
 
-    # Open web browser
-    # Expected result: Browser opens successfully
+    Set Selenium Timeout                    5 seconds
     Open Browser                            about:blank        ${BROWSER}
     Maximize Browser Window
 
 End web test
-    # Close web browser
-    # Expected Result: Browser is Closed
     Sleep                                   3 seconds
     Close Browser

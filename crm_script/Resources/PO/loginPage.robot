@@ -9,6 +9,8 @@ ${inpurPasswordBar} =  id=password
 
 *** Keywords ***
 Type login credentials
+    [Arguments]                            ${USER EMAIL}    ${USER PASSWORD}
+
     Wait Until Page Contains               Login
     Input Text                             ${inputEmailBar}            ${USER EMAIL}
     Input Password                         ${inpurPasswordBar}         ${USER PASSWORD}

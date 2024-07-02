@@ -8,16 +8,21 @@ Resource           ./PO/addCustomer.robot
 
 *** Keywords ***
 Access Homepage
-    homePage.Access Homepage
+    [Arguments]                                     ${HOME PAGE URL}
+    homePage.Access Homepage                        ${HOME PAGE URL}
 
 Sign In
+    [Arguments]                                     ${USER EMAIL}    ${USER PASSWORD}
+
     topNav.Click "Sign In" button
-    loginPage.Type login credentials
+    loginPage.Type login credentials                ${USER EMAIL}    ${USER PASSWORD}
     loginPage.Click "Submit" button
 
 Register a new client
+    [Arguments]                                    ${NEW CLIENT EMAIL}
+
     customersList.Click "New Customer" button
-    addCustomer.Type customer email
+    addCustomer.Type customer email                ${NEW CLIENT EMAIL}
     addCustomer.Type customer first name
     addCustomer.Type customer last name
     addCustomer.Type customer city
