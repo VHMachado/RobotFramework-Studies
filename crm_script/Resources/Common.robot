@@ -8,7 +8,7 @@ Initialize web test
 
     # Open web browser
     # Expected result: Browser opens successfully
-    Open Browser                            https://automationplayground.com/crm/index.html        chrome
+    Open Browser                            about:blank        ${BROWSER}
     Maximize Browser Window
 
 End web test

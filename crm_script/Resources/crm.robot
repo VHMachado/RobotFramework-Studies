@@ -1,21 +1,31 @@
 *** Settings ***
 Library            SeleniumLibrary
-Resource           ./PO/SignIn.robot
-Resource           ./PO/registerClient.robot
+Resource           ./PO/homePage.robot
+Resource           ./PO/topNav.robot
+Resource           ./PO/loginPage.robot
+Resource           ./PO/customersList.robot
+Resource           ./PO/addCustomer.robot
 
 *** Keywords ***
+Access Homepage
+    homePage.Access Homepage
+
 Sign In
-    Click login button
-    Type login credentials
-    SignIn.Click "Submit" button
+    topNav.Click "Sign In" button
+    loginPage.Type login credentials
+    loginPage.Click "Submit" button
 
 Register a new client
-    Click "New Customer" button
-    Type customer email
-    Type customer first name
-    Type customer last name
-    Type customer city
-    Select customer state
-    Select gender
-    Optionally check promotion checkbox
-    registerClient.Click "Submit" button
+    customersList.Click "New Customer" button
+    addCustomer.Type customer email
+    addCustomer.Type customer first name
+    addCustomer.Type customer last name
+    addCustomer.Type customer city
+    addCustomer.Select customer state
+    addCustomer.Select gender
+    addCustomer.Optionally check promotion checkbox
+    addCustomer.Click "Submit" button
+    customersList.Verify if new customer was added
+
+Sign Out
+    customersList.Click "Sign Out" button
