@@ -15,8 +15,8 @@ ${NEW CLIENT EMAIL} =       newuser@robot.com
 
 *** Test Cases ***
 Should be able to add new customer
-    [Documentation]                     Informations about the TEST
-    [Tags]                              1006        Smoke        Contacts
+    [Documentation]                    Informations about the TEST
+    [Tags]                             1006        Smoke        Contacts
 
     crm.Access Homepage                ${HOME PAGE URL}
     crm.Sign In                        ${USER EMAIL}    ${USER PASSWORD}
